@@ -161,10 +161,13 @@
                 <form  name="contact" method="POST" data-netlify="true" class="contact__form">
                     <div class="contact__inputs">
                         <!-- <input type="hidden" name="_captcha" value="false"> -->
-                        <input type="text" name="name" placeholder="Name" class="contact__input">
-                        <input type="mail" name="email" placeholder="Email" class="contact__input">
+                        <input type="text" name="name" id="name" placeholder="Name" class="contact__input">
+                        <input type="email" name="email" id="email" placeholder="Email" class="contact__input">
                     </div>
                     <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <div class="contact__input">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
                     <input type="submit" value="Contact Me" class="contact__button">
                 </form>
             </div>
